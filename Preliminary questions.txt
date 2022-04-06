@@ -1,0 +1,39 @@
+Preliminary questions
+
+1)What technical/business constraints should the data storage component of the program architecture meet to fulfill the requirement described by the customer in paragraph "Statistics" ?So what kind of component(s) (listed in the lecture) will the architecture need?
+
+Nour-Eddine : Here we have many conditions 
+- We need to collect and store data for statistic but for an unknown date.
+- We need to store 200Gb of daily reports
+
+The best system to manage this is by using a data lake, it can store for a big dataset easily. Using cloud can be interesting since we don't know the exact size of the data that we need, Financially, AWS or Azure are the best tool for peacemakers.
+
+2)What business constraint should the architecture meet to fulfill the requirement describe in the paragraph "Alert"? Which component to choose?
+ 
+ Yakout: While updating a citizen statut, the business constraint that the architecture should fulfill  is that it must be blocked and inaccessible to have only correct and up-to-date data while updating the citizen’s data.
+
+
+3)What mistake(s) from Peaceland can explain the failed attempt?
+Hadi : With the number of drones operating, there are regular failures of drones, actually daily failure of drones. As 
+we want to keep all reports, we need an at least once policy. (data can be duplicated). Maybe there were no management of failure 
+which explains the failed attempt.
+
+We need distributed software and a microservice architecture. Maybe there was no microservice architecture which explains the failed attempt.
+
+No-SQL should be chosen to scale because SQL doesn't scale well. Maybe there was no No-SQL choice for this project which explains the 
+failed attempt.
+
+For the CAP theorem, as we chose No-SQL, we prefer to put the emphasis on availability and partition tolerance, we believe 
+information will be eventually consistent. Maybe there was no emphasis on availability and partition tolerance for this project
+which explains the failed attempt.
+
+Each report is a very small file, thus it is not designed to work in a datalake : do not use datalake for the drone project of Peaceland.
+Maybe there was a choice to use datalakes which is not suited for this project and it might explain the failed attempt.
+
+Maybe a not suited streaming technology was chosen which could explain the failed attempt.
+
+
+
+4)Peaceland has likely forgotten some technical information in the report sent by thedrone. In the future, this information could help Peaceland make its peacewatchersmuch more efficient. Which information?
+
+nour-Eddine : It would be interesting to add a date attribute to know when data are collected.
