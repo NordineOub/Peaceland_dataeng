@@ -23,7 +23,7 @@ object ReportConsumerTest extends App {
 
   val consumer = new KafkaConsumer[String, String](props)
   val topic = "Report_Drone"
-  consumer.subscribe(util.Collections.singletonList("DroneReport"))
+  consumer.subscribe(util.Collections.singletonList("Report_Drone"))
 
   def ecrire_alerte(citoyen : Report_Drone_print.Citoyen, report_str : String)  {
 
@@ -56,7 +56,7 @@ object ReportConsumerTest extends App {
       val report_from_record = records.asScala.head.value()
       val report = Report_Drone_print.report_from_string(report_from_record)
       Report_Drone_print.print_report(report)
-      report.Citoyen_in_area.foreach(ecrire_alerte(_, report_from_record))
+      report.citoyen_in_area.foreach(ecrire_alerte(_, report_from_record))
       ecriture_de_report(report)
     }
     catch {
