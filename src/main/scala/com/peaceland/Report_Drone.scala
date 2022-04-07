@@ -70,12 +70,12 @@ object Report_Drone_print {
 
 
 
-  case class Report(id_ : Int, latitude_ : String, longitude_ : String, Citoyen_in_area_ : Array[Citoyen], mots_entendus_ : List[String], date_ : String) {
+  case class Report(id_ : Int, latitude_ : String, longitude_ : String, citoyen_in_area_ : Array[Citoyen], mots_entendus_ : List[String], date_ : String) {
   
     val id = id_
     val latitude = latitude_
     val longitude = longitude_
-    val Citoyen_in_area = Citoyen_in_area_
+    val citoyen_in_area = citoyen_in_area_
     val mots_entendus = mots_entendus_
     val jour = date_.split(":")
     val date = jour(0) match {
@@ -89,7 +89,7 @@ object Report_Drone_print {
 
     override def toString() : String = {
 
-      val Citoyen_string = Citoyen_in_area.mkString(",")
+      val Citoyen_string = citoyen_in_area.mkString(",")
       val words_string = mots_entendus.mkString(",")
       val string_to_return = "" + id + ";" + latitude + ";" + longitude + ";" + Citoyen_string + ";" + words_string + ";" + date
       string_to_return
@@ -140,7 +140,7 @@ object Report_Drone_print {
 
     println("\nVoici les citoyens dans la région")
 
-    report.Citoyen_in_area.foreach { print_Citoyen_with_tab }
+    report.citoyen_in_area.foreach { print_Citoyen_with_tab }
 
     println("\nLe drone a entendu les mots suivants :")
 
@@ -157,7 +157,7 @@ println("\n")
     val latitude_ = Address.latitude
     val longitude_ = Address.longitude
     val nb_Citoyen = 2 + scala.util.Random.nextInt(10)
-    val Citoyen_in_area_ = List.fill(nb_Citoyen)(Citoyen_Aleatoire()).toArray
+    val citoyen_in_area_ = List.fill(nb_Citoyen)(Citoyen_Aleatoire()).toArray
     val nb_word = 2 + scala.util.Random.nextInt(10)
     val mots_entenduss_ = Lorem.words(nb_word)
 
@@ -169,7 +169,7 @@ println("\n")
     val hour = random_hour.toString
     val str_day = day_of_the_week + ":" + hour
     
-    Report(id_, latitude_, longitude_, Citoyen_in_area_, mots_entenduss_, str_day)
+    Report(id_, latitude_, longitude_, citoyen_in_area_, mots_entenduss_, str_day)
 
   }
 
