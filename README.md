@@ -4,7 +4,7 @@ Peaceland est un pays qui aspire à apporter la paix, le bonheur et l'harmonie �
 
 —— Fonctionnement du projet——
 
-
+Le drone (consumer) collect les données des habitants de peaceland pour les envoyer vers un consumer qui les transmets vers un datalake qui stockera ainsi les données du drone, les alertes afin que peaceland puisse les analyser
 
 
 
