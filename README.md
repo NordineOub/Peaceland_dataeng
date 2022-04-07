@@ -10,7 +10,7 @@ Peaceland est un pays qui aspire à apporter la paix, le bonheur et l'harmonie �
 
 —— Lancement du projet——
 
-Lancer Zookeeper
-Lancer Kafka server
-Lancer Kafka producer
-Lancer Kafka consumer
+Lancer Zookeeper /
+Lancer Kafka server /
+Lancer Kafka producer /
+Lancer Kafka consumer /
