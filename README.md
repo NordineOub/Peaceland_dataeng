@@ -1,8 +1,8 @@
-Project DATA ENGINEERING M1: Peaceland 
+# Project DATA ENGINEERING M1: Peaceland 
 
 Peaceland is a country that aspires to bring peace, happiness and harmony to all its citizens. Its dedicated government wishes to achieve this goal by bringing peace to the country. A "peacewatcher" drone has been set up by engineers to fulfill this goal. The goal of this project is to create a program demonstrating the working architecture of peaceland, which will receive and manage the data from the drone.
 
--- How the project works--
+## -- How the project works--
 
 The drone (producer) collects the data of the inhabitants of peaceland to send them to a consumer who transmits them to a datalake which will store the data of the drone, the alerts, so that peaceland can analyze them
 
@@ -11,7 +11,7 @@ The alerts (events): when the score of a person is lower than the threshold of t
 
 
 
--- How to launch the project--
+## -- How to launch the project--
 
 Launch Zookeeper /
 Launch Kafka server /
