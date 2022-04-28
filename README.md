@@ -1,19 +1,19 @@
-Projet DATA ENGINEERING M1: Peaceland 
+Project DATA ENGINEERING M1: Peaceland 
 
-Peaceland est un pays qui aspire à apporter la paix, le bonheur et l'harmonie à tous ses citoyens. Son gouvernement dédiée  souhaite atteindre cet objectif en apportant la paix dans le pays. Un drone « peacewatcher » a été mis en place par des ingénieurs pour remplir cet objectif. Le but de ce projet est de créer un programme démontrant l’ architecture de travail de peaceland, qui recevra et gérera les données du drone.
+Peaceland is a country that aspires to bring peace, happiness and harmony to all its citizens. Its dedicated government wishes to achieve this goal by bringing peace to the country. A "peacewatcher" drone has been set up by engineers to fulfill this goal. The goal of this project is to create a program demonstrating the working architecture of peaceland, which will receive and manage the data from the drone.
 
-—— Fonctionnement du projet——
+-- How the project works--
 
-Le drone (consumer) collect les données des habitants de peaceland pour les envoyer vers un consumer qui les transmets vers un datalake qui stockera ainsi les données du drone, les alertes, afin que peaceland puisse les analyser
+The drone (producer) collects the data of the inhabitants of peaceland to send them to a consumer who transmits them to a datalake which will store the data of the drone, the alerts, so that peaceland can analyze them
 
-Les alertes (events) : quand le score d'une personne est inférieure au seuil de tolérance, le drone qui survole les citoyens avec bienveillance lance une alerte avec la position du drone et le nom de la personne qui a besoin de retourner vers un état de paix. Cela permettra de placer cette personne dans un camp avec un programme apaisant et il pourra ensuite retourner à sa vie normale. Si le programme de paix du camp n'est pas suffisant, la personne sera prise en charge dans un programme différent, qui lui permettra d'aller vers un état de paix permanente.
-
-
+The alerts (events): when the score of a person is lower than the threshold of tolerance, the drone which flies over the citizens with benevolence launches an alert with the position of the drone and the name of the person who needs to return towards a state of peace. This will place that person in a camp with a soothing program and he or she can then return to his or her normal life. If the camp's peace program is not sufficient, the person will be taken into a different program, which will allow them to go to a permanent state of peace.
 
 
-—— Lancement du projet——
 
-Lancer Zookeeper /
-Lancer Kafka server /
-Lancer Kafka producer /
-Lancer Kafka consumer /
+
+-- How to launch the project--
+
+Launch Zookeeper /
+Launch Kafka server /
+Launch Kafka producer /
+Launch Kafka consumer /
