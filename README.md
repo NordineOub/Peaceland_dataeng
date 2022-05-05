@@ -22,8 +22,17 @@ The alerts (events) is triggered when a certain person have a social score lower
 
 
 ## -- How to launch the project--
+### Launching Kafka serveur
+Launch Zookeeper in a terminal /
 
-Launch Zookeeper /
-Launch Kafka server /
-Launch Kafka producer /
-Launch Kafka consumer /
+Launch Kafka server in another terminal (window or tab)/
+
+
+### Scala analysis
+Launch SBT /
+
+Select the producer program  /
+
+Open a second terminal /
+
+Launch SBT again and select the consumer program this time/
