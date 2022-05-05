@@ -4,8 +4,7 @@ The goal of this project is to learn how to use Kafka.
 To do that, we imagined a scenario where a drone will spy on people, collect informations about them and use a kafka stream to send these informations to a central terminal for analysis. This program will use Scala, Spark, Kafka and HDFS. Scala faker is also used to create the dataset
 
 ## -- Global architecture --
-<img width="793" alt="image" src="https://user-images.githubusercontent.com/75072085/166919127-59a17801-2910-429e-8dd4-da8afc04dc84.png">
-
+<img width="777" alt="image" src="https://user-images.githubusercontent.com/75072085/166921356-d4b024ac-e136-4b46-b7da-ff579876f8e3.png">
 
 ## -- How the project works--
 
